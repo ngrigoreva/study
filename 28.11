@@ -1,0 +1,16 @@
+fl = open('Genproc.scv')
+s = fl.read
+#здесь нужно убрать несколько первых слобцов в csv
+for line in s:
+    line = line.split()
+    lines = []
+    lines.append(line[
+words = s.split()
+bigramms = []
+i = 0
+while i < len(words) - 1:
+    w1 = words[i]
+    w2 = words[i+1]
+    bigramms.append(w1+' '+w2)
+    i = i+1
+    
